@@ -12,8 +12,8 @@ class UserException extends Exception{
 public class TryTest07 {
 	public static void main(String[] args) {
 		try {
-			int a = -11;
-			if(a <= 0) {
+			int a = -10;
+			if(a < 0) {
 				throw new UserException("양수가 아닙니다!");
 			}
 		}catch(UserException ue) {
